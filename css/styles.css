@@ -1,0 +1,260 @@
+                                          /* Tag Selectors */
+
+body
+{
+  font-family: "Montserrat";
+  text-align: center;
+}
+
+p
+{
+  color : #8f8f8f;
+}
+
+.container-fluid
+{
+  padding: 7% 15%;
+}
+
+                              /* Sections */
+
+.coloured-section
+{
+  background-color: #ff4c68;
+  color: white;
+}
+
+.white-section
+{
+  background-color: #fff;
+}
+
+                                        /* Headings */
+
+h2,h3
+{
+  font-family: "Montserrat-Bold";
+}
+
+.biggest-heading
+{
+  font-size: 3rem;
+  font-weight: 900;       /* font-family: "Montserrat-black"; */
+  line-height: 1.5;
+}
+
+.Feature-heading
+{
+  font-size: 2rem;
+
+  /* for Montserrat-Bold */
+  font-weight: 700;
+}
+
+.pricing-heading
+{
+  font-size: 2.5rem;
+  line-height: 3.5rem;
+}
+
+                                      /* Title Section */
+
+/*  Hierarchical Selectors */
+/* element with class="container-fluid" and child of element with id="title" will be applied the given padding */
+#title .container-fluid
+{
+  padding: 3% 15% 7%;
+}
+
+
+.navbar-brand
+{
+  font-family: "Ubuntu";
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.title-row
+{
+  margin: 4rem 0 0 0;
+}
+
+.title-image
+{
+  display: block;
+  margin: 0 25%;
+
+  /* rotates image by 20 degrees clockwise */
+  transform:rotate(20deg);
+
+  width: 50%;
+
+  position: absolute;
+}
+
+.dwnld-buttons
+{
+  margin: 2rem 1rem 1rem 0;
+}
+
+                        /* Features Section */
+
+#features
+{
+  padding:7% 10%;
+  position: relative;
+  z-index: 1;
+}
+
+.column-of-features
+{
+  padding: 5%;
+}
+
+.feature-icon
+{
+  color: #ef8172;
+  margin-bottom: 2rem;
+}
+
+ /* when we hover over the icons,it will change colour */
+.feature-icon:hover
+{
+  color:#ff4c68;
+}
+
+                                    /* Testimonials Section */
+
+#testimonials
+{
+  background-color: #ef8172;
+  color: #ffff;
+}
+
+.testimonial-text
+{
+  font-size: 2.5rem;
+  line-height: 3.5rem;
+}
+
+.testimonial-img
+{
+  border-radius: 100%;
+  margin: 2rem 2rem 0 0;
+  width: 20%;
+}
+
+                            /* Press Section */
+
+#press
+{
+  background-color: #ef8172;
+  padding-bottom: 4%;
+}
+
+.press-img
+{
+  width: 12%;
+  margin-left: 2rem;
+}
+
+                          /* Pricing Section */
+
+#pricing
+{
+  margin: 7% 10%;
+}
+
+.pricing-column
+{
+  padding: 4% 2%;
+}
+
+.pricing-card
+{
+  font-size: 2rem;
+
+  /* for Montserrat-Bold */
+  font-weight: 700;
+}
+
+.pricing-text
+{
+  font-size: 2.5rem;
+  line-height: 3.5rem;
+}
+
+                  /* Call-To-Action Section */
+
+#cta
+{
+  padding: 10% 15%;
+}
+
+.dwnld-buttons-cta
+{
+  margin: 5rem 1rem 1rem 0;
+}
+
+                            /* Footer Section */
+
+#footer
+{
+  padding-top: 2%;
+}
+
+.footer-icons
+{
+  margin: 0 2rem;
+}
+
+.footer-para
+{
+  padding-top :1rem;
+}
+                                    /* Media Queries */
+
+@media screen and (max-width:992px) and (min-width:580px)
+{
+    .dwnld-buttons
+    {
+       margin: 2rem 1rem 2.5rem 0;
+    }
+}
+
+@media screen and (max-width:580px)
+{
+    h1
+    {
+      padding-bottom: 1.5rem;
+    }
+    .dwnld-buttons
+    {
+       margin: 0 1rem 2.5rem 0;
+    }
+    .dwnld-buttons-cta
+    {
+       margin: 0 1rem 2rem 0;
+    }
+    .h3-cta
+    {
+      padding-bottom: 1.5rem;
+    }
+}
+
+@media screen and (max-width:992px)
+{
+   .title-image
+   {
+      position: static;
+      transform: rotate(0deg);
+   }
+}
+
+@media (min-width: 992px)
+{
+  biggest-heading
+  {
+    padding-bottom: 3rem;
+  }
+}

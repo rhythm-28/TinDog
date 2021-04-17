@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>tindog</title>
+
+  <!-- Vector icons for title section -->
+  <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+
+  <!-- Linking Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <!-- Liking Exteral CSS file -->
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Embeding Montserrat and Ubuntu fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+
+  <!-- Liking JS scripts -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+  <div id="title">
+    <!-- To make it responsive to every screen size -->
+    <section class="container-fluid coloured-section">
+
+      <!-- Nav Bar -->
+      <nav class="navbar navbar-expand-lg navbar-dark">
+
+        <!-- Brand title -->
+        <a href="#" class="navbar-brand">tindog</a>
+
+        <!-- Toggle button, which oppears on md & sm screens and on pressing it, opens up the nav bar vertically -->
+        <!-- But for lg & xl screens, it remains horizontal amd no toggle button appears  -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- collapses on pressing the toggle button  -->
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav ml-auto">
+
+            <li class="nav-item px-3">
+              <a class="nav-link" href="#footer">Contact</a>
+            </li>
+
+            <li class="nav-item px-3">
+              <a class="nav-link" href="#pricing">Pricing</a>
+            </li>
+
+            <li class="nav-item px-3">
+              <a class="nav-link" href="#cta">Download</a>
+            </li>
+
+          </ul>
+        </div>
+      </nav>
+
+
+
+      <!-- Title -->
+
+      <!-- To make h1 and buttons occupy left half of screen and the image right half of screen on lg and xl screens -->
+      <!--  But on sm & md screens, both divs occupy full width of the screen -->
+      <div class="row title-row">
+        <div class="col-lg-6">
+          <h1 class="biggest-heading">Meet new and interesting dogs nearby.</h1>
+          <button type="button" class="btn btn-dark btn-lg dwnld-buttons"><span class="fab fa-apple"></span> Download</button>
+          <button type="button" class="btn btn-outline-light btn-lg dwnld-buttons"><i class="fab fa-google-play"></i> Download</button>
+        </div>
+        <div class="col-lg-6">
+          <img src="images/iphone6.png" alt="iphone-mockup" class="title-image">
+        </div>
+      </div>
+
+  </div>
+  </div>
+
+
+  <!-- Features -->
+
+  <section id="features" class="white-section">
+    <div class="row">
+      <div class="col-lg-4 column-of-features">
+        <i class="fas fa-check-circle feature-icon fa-4x"></i>
+        <h3 class="Feature-heading">Easy to use.</h3>
+        <p>So easy to use, even your dog could do it.</p>
+      </div>
+      <div class="col-lg-4 column-of-features">
+        <i class="fas fa-bullseye feature-icon fa-4x"></i>
+        <h3 class="Feature-heading">Elite Clientele</h3>
+        <p>We have all the dogs, the greatest dogs.</p>
+      </div>
+      <div class="col-lg-4 column-of-features">
+        <i class="fas fa-heart feature-icon fa-4x"></i>
+        <h3 class="Feature-heading">Guaranteed to work.</h3>
+        <p>Find the love of your dog's life or your money back.</p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Testimonials -->
+
+  <section id="testimonials" class="coloured-section">
+
+    <div id="carousel-1" class="carousel slide" data-ride="carousel" data-interval="4000">
+      <div class="carousel-inner">
+        <div class="carousel-item container-fluid">
+          <h2 class="testimonial-text">I no longer have to sniff other dogs for love. I've found the hottest Corgi on TinDog. Woof.</h2>
+          <img src="images/dog-img.jpg" alt="dog-profile" class="testimonial-img">
+          <em>Pebbles, New York</em>
+        </div>
+        <div class="carousel-item active container-fluid">
+          <h2 class="testimonial-text">My dog used to be so lonely, but with TinDog's help, they've found the love of their life. I think.</h2>
+          <img class="testimonial-img" src="images/lady-img.jpg" alt="lady-profile">
+          <em>Beverly, Illinois</em>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carousel-1" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carousel-1" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+
+  </section>
+
+
+  <!-- Press -->
+
+  <section id="press" class="coloured-section">
+    <img class="press-img" src="images/TechCrunch.png" alt="tc-logo">
+    <img class="press-img" src="images/tnw.png" alt="tnw-logo">
+    <img class="press-img" src="images/bizinsider.png" alt="biz-insider-logo">
+    <img class="press-img" src="images/mashable.png" alt="mashable-logo">
+
+  </section>
+
+
+  <!-- Pricing -->
+
+  <section id="pricing" class="white-section">
+
+    <h2 class="pricing-heading">A Plan for Every Dog's Needs</h2>
+    <p>Simple and affordable price plans for your and your dog.</p>
+
+    <div class="row">
+
+      <div class="col-lg-4 col-md-6 pricing-column">
+        <div class="card">
+          <div class="card-header">
+            <h3 class="pricing-card">Chihuahua</h3>
+          </div>
+          <div class="card-body">
+            <h2 class="pricing-text">Free</h2>
+            <p>5 Matches Per Day</p>
+            <p>10 Messages Per Day</p>
+            <p>Unlimited App Usage</p>
+            <button type="button" class="btn btn-outline-dark btn-lg btn-block">Sign Up</button>
+          </div>
+          <!-- <div class="card-footer">
+              Footer
+            </div> -->
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 pricing-column">
+        <div class="card">
+          <div class="card-header">
+            <h3 class="pricing-card">Labrador</h3>
+          </div>
+          <div class="card-body">
+            <h2 class="pricing-text">$49 / mo</h2>
+            <p>Unlimited Matches</p>
+            <p>Unlimited Messages</p>
+            <p>Unlimited App Usage</p>
+            <button type="button" class="btn btn-dark btn-lg btn-block">Sign Up</button>
+          </div>
+          <!-- <div class="card-footer">
+            Footer
+          </div> -->
+        </div>
+      </div>
+
+      <div class="col-lg-4 pricing-column">
+        <div class="card">
+          <div class="card-header">
+            <h3 class="pricing-card">Mastiff</h3>
+          </div>
+          <div class="card-body">
+            <h2 class="pricing-text">$99 / mo</h2>
+            <p>Pirority Listing</p>
+            <p>Unlimited Matches</p>
+            <p>Unlimited Messages</p>
+            <p>Unlimited App Usage</p>
+            <button type="button" class="btn btn-dark btn-lg btn-block">Sign Up</button>
+          </div>
+          <!-- <div class="card-footer">
+            Footer
+          </div> -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Call to Action -->
+
+  <section id="cta" class="coloured-section">
+
+    <h3 class="biggest-heading">Find the True Love of Your Dog's Life Today.</h3>
+    <button type="button" class="btn btn-dark btn-lg dwnld-buttons-cta"><span class="fab fa-apple"></span> Download</button>
+    <button type="button" class="btn btn-outline-light btn-lg dwnld-buttons-cta"><i class="fab fa-google-play"></i> Download</button>
+
+  </section>
+
+
+  <!-- Footer -->
+
+  <footer id="footer" class="white-section">
+
+    <a class="footer-icons" href="https://www.facebook.com/bhatia.ridham.1"><img src="https://img.icons8.com/android/24/000000/facebook-new.png" /></a>
+    <a class="footer-icons" href="https://twitter.com/RhythmBhatia_28"><img src="https://img.icons8.com/android/24/000000/twitter.png" /></a>
+    <a class="footer-icons" href="https://www.linkedin.com/in/rhythm-bhatia/"><img src="https://img.icons8.com/ios-glyphs/30/000000/linkedin-2.png" /></a>
+
+    <p class="footer-para">© Copyright 2021 TinDog</p>
+
+  </footer>
+
+</body>
+
+</html>
